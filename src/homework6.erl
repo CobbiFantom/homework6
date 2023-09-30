@@ -4,10 +4,18 @@
 
 %% API
 -export([start_link/0]).
--export([create/1, test/1, insert/3, insert/4, lookup/2]).
+-export([create/1]).
+-export([insert/3]).
+-export([insert/4]).
+-export([lookup/2]).
 
 %% gen_server callbacks
--export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
+-export([init/1]).
+-export([handle_call/3]).
+-export([handle_cast/2]).
+-export([handle_info/2]).
+-export([terminate/2]).
+-export([code_change/3]).
 
 -include_lib("stdlib/include/ms_transform.hrl").
 
@@ -25,9 +33,6 @@ start_link() ->
 
 create(TableName) ->
     gen_server:call(?MODULE, {create, TableName}).
-
-test(A) ->
-    gen_server:call(?MODULE, {test, A}).
 
 insert(TableName, Key, Value) ->
     gen_server:call(?MODULE, {insert, TableName, Key, Value}).
