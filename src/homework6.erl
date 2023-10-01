@@ -55,11 +55,10 @@ handle_call({create, TableName}, _From, State) ->
     case ets:info(TableName) of
         undefined ->
             Table = ets:new(TableName, [public, named_table]),
-            {reply, {ok, Table}, State#work_state{cache = Table}};
+            {reply, {TableName, ok}, State#work_state{cache = Table}};
         _ ->
             {reply, already_exist, State}
     end;
-
 handle_call({insert, TableName, Key, Value}, _From, State = #work_state{}) ->
     case ets:info(TableName) of
         undefined ->
