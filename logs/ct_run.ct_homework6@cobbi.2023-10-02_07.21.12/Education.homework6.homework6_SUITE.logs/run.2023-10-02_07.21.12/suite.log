@@ -1,0 +1,48 @@
+=== Suite started at 2023-10-02 07:21:12
+=== Starting test, 3 test cases
+=cases         3
+=user          cobbi
+=host          cobbi
+=hosts         cobbi 
+=emulator_vsn  12.2.1
+=emulator      beam
+=otp_release   24
+=started       2023-10-02 07:21:12
+=case          homework6_SUITE:init_per_suite
+=logfile       homework6_suite.init_per_suite.html
+=started       2023-10-02 07:21:12
+=ended         2023-10-02 07:21:12
+=result        ok
+=elapsed       0.002787
+=case          homework6_SUITE:homework6_create_test
+=logfile       homework6_suite.homework6_create_test.html
+=started       2023-10-02 07:21:12
+=ended         2023-10-02 07:21:12
+=result        ok
+=elapsed       2.0e-5
+=case          homework6_SUITE:homework_insert_test
+=logfile       homework6_suite.homework_insert_test.html
+=started       2023-10-02 07:21:12
+=ended         2023-10-02 07:21:12
+=result        ok
+=elapsed       2.8e-5
+=case          homework6_SUITE:homework_lookup_test
+=logfile       homework6_suite.homework_lookup_test.html
+=started       2023-10-02 07:21:12
+=ended         2023-10-02 07:21:18
+=result        ok
+=elapsed       5.00064
+=case          homework6_SUITE:end_per_suite
+=logfile       homework6_suite.end_per_suite.html
+=started       2023-10-02 07:21:18
+=ended         2023-10-02 07:21:18
+=result        ok
+=elapsed       0.002629
+=group_time    5.122s
+=== TEST COMPLETE, 3 ok, 0 failed of 3 test cases
+
+=finished      2023-10-02 07:21:18
+=failed        0
+=successful    3
+=user_skipped  0
+=auto_skipped  0

@@ -1,0 +1,86 @@
+=== Suite started at 2023-10-02 07:17:14
+=== Starting test, 3 test cases
+=cases         3
+=user          cobbi
+=host          cobbi
+=hosts         cobbi 
+=emulator_vsn  12.2.1
+=emulator      beam
+=otp_release   24
+=started       2023-10-02 07:17:14
+=case          homework6_SUITE:init_per_suite
+=logfile       homework6_suite.init_per_suite.html
+=started       2023-10-02 07:17:14
+=ended         2023-10-02 07:17:14
+=result        ok
+=elapsed       0.003362
+=case          homework6_SUITE:homework6_create_test
+=logfile       homework6_suite.homework6_create_test.html
+=started       2023-10-02 07:17:14
+=ended         2023-10-02 07:17:14
+=result        ok
+=elapsed       2.1e-5
+=case          homework6_SUITE:homework_insert_test
+=logfile       homework6_suite.homework_insert_test.html
+=started       2023-10-02 07:17:14
+=ended         2023-10-02 07:17:14
+=result        failed: {{badmatch,ok},
+                        [{homework6_SUITE,homework_insert_test,1,
+                             [{file,"test/homework6_SUITE.erl"},{line,22}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1783}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1292}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,1224}]}]}, [{homework6_SUITE,
+                                                                          homework_insert_test,
+                                                                          22},
+                                                                         {test_server,
+                                                                          ts_tc,
+                                                                          1783},
+                                                                         {test_server,
+                                                                          run_test_case_eval1,
+                                                                          1292},
+                                                                         {test_server,
+                                                                          run_test_case_eval,
+                                                                          1224}]
+=== *** FAILED test case 2 of 3 ***
+=case          homework6_SUITE:homework_lookup_test
+=logfile       homework6_suite.homework_lookup_test.html
+=started       2023-10-02 07:17:14
+=ended         2023-10-02 07:17:14
+=result        failed: {{badmatch,val2},
+                        [{homework6_SUITE,homework_lookup_test,1,
+                             [{file,"test/homework6_SUITE.erl"},{line,26}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1783}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1292}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,1224}]}]}, [{homework6_SUITE,
+                                                                          homework_lookup_test,
+                                                                          26},
+                                                                         {test_server,
+                                                                          ts_tc,
+                                                                          1783},
+                                                                         {test_server,
+                                                                          run_test_case_eval1,
+                                                                          1292},
+                                                                         {test_server,
+                                                                          run_test_case_eval,
+                                                                          1224}]
+=== *** FAILED test case 3 of 3 ***
+=case          homework6_SUITE:end_per_suite
+=logfile       homework6_suite.end_per_suite.html
+=started       2023-10-02 07:17:14
+=ended         2023-10-02 07:17:14
+=result        ok
+=elapsed       8.1e-4
+=group_time    0.127s
+=== TEST COMPLETE, 1 ok, 2 failed of 3 test cases
+
+=finished      2023-10-02 07:17:14
+=failed        2
+=successful    1
+=user_skipped  0
+=auto_skipped  0
