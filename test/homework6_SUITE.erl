@@ -14,12 +14,12 @@ init_per_suite(Config) ->
     Config.
 
 homework6_create_test(_Config) ->
-    ok = homework6:create(new),
+    {new, ok} = homework6:create(new),
     already_exist = homework6:create(new).
 
 homework_insert_test(_Config) ->
-    ok = homework6:insert(new, key, val),
-    ok = homework6:insert(new, key2, val2, 5).
+    {insert, ok} = homework6:insert(new, key, val),
+    {insert, ok} = homework6:insert(new, key2, val2, 5).
 
 homework_lookup_test(_Config) ->
     val = homework6:lookup(new, key),

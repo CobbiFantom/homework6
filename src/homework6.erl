@@ -74,7 +74,7 @@ handle_call({insert, TableName, Key, Value, Timeout}, _From, State = #work_state
             {reply, undefined, State};
         _ ->
             ets:insert(TableName, {Key, Value, erlang:system_time(seconds) + Timeout}),
-            {reply, ok, State}
+            {reply, {insert, ok}, State}
     end;
 
 handle_call({lookup, TableName, Key}, _From, State) ->
